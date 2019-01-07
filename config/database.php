@@ -52,13 +52,14 @@ return [
             'prefix' => '',
         ],
 
+        // needs to be set properly. also add to .gitignore when cloning repo to no override or leak.
         'mysql' => [
             'driver' => 'mysql',
             'host' => env('DB_HOST', 'localhost'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'projektweberp'),
-            'username' => env('DB_USERNAME', 'laravel'),
-            'password' => env('DB_PASSWORD', '49tjgsogkkrds434t'),
+            'database' => env('DB_DATABASE', 'default'),
+            'username' => env('DB_USERNAME', 'default'),
+            'password' => env('DB_PASSWORD', 'default'),
             'charset' => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix' => '',

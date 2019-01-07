@@ -19,7 +19,7 @@ class Ueberweisung extends Model
 
         unset($input["_token"]);    //token muss weg, damit fehlerfrei gelooped wird
         foreach ($input as $item) {
-            //hier noch: nur berücksichtigen, wenn auch ausgewählt
+            //hier noch: nur berÃ¼cksichtigen, wenn auch ausgewÃ¤hlt
             if (!isset($item['erstellen'])) {
                continue;
             }
@@ -34,9 +34,9 @@ class Ueberweisung extends Model
             //ansonsten: automatische berechnung aus alter + awg-wiGeld
             else {
                 if (isset($item['aussenwohnung']) && $item['aussenwohnung'] == "on") {
-                    $betrag = $betrag + 90; //180 euro WiGeld für AWG-Bewohner pro Monat
+                    $betrag = $betrag + 90; //180 euro WiGeld fï¿½r AWG-Bewohner pro Monat
                 }
-                //taschengeldsatz für monat dazuzählen
+                //taschengeldsatz fï¿½r monat dazuzï¿½hlen
                 $betrag = $betrag + $item['taschengeld']/2;
             }
 
@@ -49,10 +49,10 @@ class Ueberweisung extends Model
             $name = $item['name'] . ", " . $item['vorname'];
 
             $data = [
-                'Zahlungsempfänger' => $name,
+                'Zahlungsempfï¿½nger' => $name,
                 'Angaben zum Kontoinhaber' => $meinKonto->konto_bezeichnung,
                 'Datum' => $datum->format('d.m.Y'),
-                'Verwendungszweck' => $item['betreff'], //hier noch länge kontrollieren
+                'Verwendungszweck' => $item['betreff'], //hier noch lï¿½nge kontrollieren
                 'noch Verwendungszweck' => '',
                 'Betrag Euro Cent' => $betrag,
                 'Kreditinstitut' => $meinKonto->konto_bezeichnung,
@@ -68,11 +68,11 @@ class Ueberweisung extends Model
             $pdf->flatten()->save(public_path() . "/modul_ueberweisung/temp/output" . $i++ . ".pdf");
         }
 
-        // alles zusammenfügen
+        // alles zusammenfï¿½gen
         $command = "pdftk \"" . public_path() . "/modul_ueberweisung/temp/*.pdf\" cat output \"" . public_path() . "/modul_ueberweisung/output.pdf\"";
         exec($command);
 
-        // das temp-verzeichnis danach wieder aufräumen
+        // das temp-verzeichnis danach wieder aufrï¿½umen
         $fullPath = public_path() . "/modul_ueberweisung/temp/" ;
         array_map('unlink', glob( "$fullPath*.pdf"));
 

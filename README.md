@@ -17,8 +17,9 @@ Relevant Files are mostly in:
 - /resources/views
 - /public/modul_ueberweisung
 - SQL-Tables are saved as a SQL-Script in sql_snapshot.sql
-<br><br>
-Necessary software: pdftk
+
+<br>
+Necessary additional software (in addition to LAMP): pdftk
 
 <h1>Status</h1>
 Functional parts:

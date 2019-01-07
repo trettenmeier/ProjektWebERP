@@ -18,6 +18,9 @@ Relevant Files are mostly in:
 - /public/modul_ueberweisung
 - SQL-Tables are saved as a SQL-Script in sql_snapshot.sql
 
+<br>
+Necessary additional software (in addition to LAMP): pdftk
+
 <h1>Status</h1>
 Functional parts:
 
@@ -27,7 +30,7 @@ Functional parts:
 - client administration
 - documentation (mostly, except "show archived" clients)
 
-<h1>Todo:</h1>
+Todo:
 
 - Git: Unentangle the actual code from the Laravel framework
 - Show archived view in the documentation module

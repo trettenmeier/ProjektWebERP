@@ -9,6 +9,7 @@ This Web-Application is built with PHP (Laravel-Framework) and MySQL to run on a
 Comments and content is completly in German.
 <br><br>
 Relevant Files are mostly in:
+
 - /App/Http/Controllers/
 - /App/Http/Helpers/
 - /App/Http/
@@ -19,6 +20,7 @@ Relevant Files are mostly in:
 
 <h1>Status</h1>
 Functional parts:
+
 - credit transfer
 - dashboard
 - user administration
@@ -26,5 +28,6 @@ Functional parts:
 - documentation (mostly, except "show archived" clients)
 
 <h1>Todo:</h1>
+
 - Git: Unentangle the actual code from the Laravel framework
 - Show archived view in the documentation module

@@ -1,13 +1,13 @@
 # ProjektWebERP
 <h1>Description</h1>
 Private project to automate certain tasks at my workplace (documentation, credit transfer - create pdf-Files with banking details, store and retrieve information about clients, etc.)
-
+<br><br>
 This Web-Application is built with PHP (Laravel-Framework) and MySQL to run on a Linux server. Some parts are Copyrighted/Licenced (especially the INSPINIA-Bootstrap Theme).
 
 
 <h1>Notes</h1>
 Comments and content is completly in German.
-
+<br><br>
 Relevant Files are mostly in:
 - /App/Http/Controllers/
 - /App/Http/Helpers/

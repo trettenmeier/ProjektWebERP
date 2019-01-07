@@ -1,0 +1,70 @@
+---
+FieldType: Text
+FieldName: Zahlungsempf&#228;nger
+FieldFlags: 29360128
+FieldJustification: Left
+FieldMaxLength: 27
+---
+FieldType: Text
+FieldName: Angaben zum Kontoinhaber
+FieldFlags: 29360128
+FieldJustification: Left
+FieldMaxLength: 27
+---
+FieldType: Text
+FieldName: Datum
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Verwendungszweck
+FieldFlags: 29360128
+FieldJustification: Left
+FieldMaxLength: 27
+---
+FieldType: Text
+FieldName: noch Verwendungszweck
+FieldFlags: 29360128
+FieldJustification: Left
+FieldMaxLength: 27
+---
+FieldType: Text
+FieldName: Betrag Euro Cent
+FieldFlags: 29360128
+FieldJustification: Left
+FieldMaxLength: 12
+---
+FieldType: Text
+FieldName: Kreditinstitut
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: BIC Kreditinstitut
+FieldFlags: 29360128
+FieldJustification: Left
+FieldMaxLength: 11
+---
+FieldType: Text
+FieldName: IBAN des Kontoinhabers
+FieldFlags: 29360128
+FieldJustification: Left
+FieldMaxLength: 34
+---
+FieldType: Text
+FieldName: BIC
+FieldFlags: 29360128
+FieldJustification: Left
+FieldMaxLength: 11
+---
+FieldType: Text
+FieldName: IBAN
+FieldFlags: 29360128
+FieldJustification: Left
+FieldMaxLength: 20
+---
+FieldType: Text
+FieldName: Hinweis
+FieldFlags: 8392704
+FieldValue: &#13;Achtung! &#13;Bitte beim Drucken die Option &#8222;Tats&#228;chliche Gr&#246;&#223;e&#8220; ausw&#228;hlen.
+FieldJustification: Center
